@@ -35,10 +35,10 @@ call vundle#end()
 filetype plugin indent on
 let g:neocomplcache_enable_at_startup = 1
 set history=999
- autocmd BufReadPost *
-	 \ if line("'\"") > 1 && line("'\"") <= line("$") |
-     \ exe "normal! g`\"" |
-	 \ endif
+autocmd BufReadPost *
+	\ if line("'\"") > 1 && line("'\"") <= line("$") |
+  \ exe "normal! g`\"" |
+	\ endif
 
 
 "python_version_3
